@@ -398,6 +398,85 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
+.centered-paragraph {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.7;
+  color: #fff;
+  background: #09203a; /* Changed from #232b36 */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.news-scroll {
+  max-height: 700px;      /* Adjust as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+  scrollbar-width: thin;              /* For Firefox */
+  scrollbar-color: #1c7d32 #232b36;   /* For Firefox */
+}
+
+/* For Chrome, Edge, Safari */
+.news-scroll::-webkit-scrollbar {
+  width: 10px;
+  background: #232b36;
+  border-radius: 6px;
+}
+
+.news-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #47aeff 0%, #1c7d32 100%);
+  border-radius: 6px;
+  border: 2px solid #09203a;
+}
+
+.news-scroll::-webkit-scrollbar-track {
+  background: #232b36;
+  border-radius: 6px;
+}
+
+
+
+/*-----------------Education Pop Up---------*/
+.modal-window {
+  position: fixed;
+  background-color: rgba(30, 30, 30, 0.85);
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  width: 90%;
+  max-width: 600px;
+  margin: 5% auto;
+  background: #181f2a;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+.modal-close {
+  color: #aaa;
+  font-size: 2rem;
+  position: absolute;
+  right: 18px;
+  top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.modal-close:hover {
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Counts
