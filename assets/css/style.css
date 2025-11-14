@@ -1175,3 +1175,28 @@ section .container {
     transform: translateX(-50%);
   }
 }
+
+
+
+
+
+#education .icon-box {
+  padding: 10px;
+}
+
+#education .icon-box img {
+  max-height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#education .icon-box h5 {
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+#education .icon-box p,
+#education .icon-box h6 {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
