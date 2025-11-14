@@ -1200,3 +1200,12 @@ section .container {
   font-size: 0.8rem;
   margin-bottom: 5px;
 }
+
+
+
+.list-group-item-action:hover {
+  background: rgba(18, 214, 64, 0.1) !important;
+  border-color: #12d640 !important;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
