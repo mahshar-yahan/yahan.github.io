@@ -1215,3 +1215,11 @@ section .container {
   transform: scale(1.2);
   opacity: 0.8;
 }
+
+.bx:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+button:hover i {
+  transform: scale(1.2);
+}
