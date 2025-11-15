@@ -91,22 +91,82 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
+      <!-- ======= About Me ======= -->
+      <div class="about-me container">
 
-      <div class="section-title">
-        <h2>About</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/my own-Photoroom.png" class="img-fluid" alt="">
+        <div class="section-title">
+          <h2>About</h2>
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <div class="centered-paragraph">
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/my own-Photoroom.png" class="img-fluid" alt="" style="margin-bottom: 20px;">
+            
+            <!-- Contact Information Below Image -->
+<div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 5px; padding: 20px;">
+  <h5 style="color: #12d640; margin-bottom: 15px; font-weight: 600;">
+    <i class="bx bx-envelope" style="margin-right: 8px;"></i>Contact
+  </h5>
+  <ul style="list-style: none; padding: 0; margin: 0;">
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <i class="bx bx-mail-send" style="color: #12d640; margin-right: 10px; font-size: 18px;"></i>
+      <a href="mailto:yahanmahshar1@gmail.com" style="color: #fff; text-decoration: none; font-size: 0.9rem;">yahanmahshar1@gmail.com</a>
+      <button onclick="copyEmail('yahanmahshar1@gmail.com', this)" style="background: transparent; border: none; color: #12d640; cursor: pointer; margin-left: 8px; font-size: 16px; padding: 0;">
+        <i class="bx bx-copy"></i>
+      </button>
+    </li>
+    <li style="margin-bottom: 12px; display: flex; align-items: center;">
+      <i class="bx bx-mail-send" style="color: #12d640; margin-right: 10px; font-size: 18px;"></i>
+      <a href="mailto:mahshar@uttara.ac.bd" style="color: #fff; text-decoration: none; font-size: 0.9rem;">mahshar@uttara.ac.bd</a>
+      <button onclick="copyEmail('mahshar@uttara.ac.bd', this)" style="background: transparent; border: none; color: #12d640; cursor: pointer; margin-left: 8px; font-size: 16px; padding: 0;">
+        <i class="bx bx-copy"></i>
+      </button>
+    </li>
+    <li style="margin-bottom: 0; display: flex; align-items: center;">
+      <span style="color: #12d640; font-size: 0.9rem; margin-right: 10px; min-width: 50px;">Others:</span>
+      <div style="display: flex; gap: 15px;">
+        <a href="https://www.linkedin.com/in/mahshar-yahan" target="_blank" rel="noopener" style="color: #0077b5; font-size: 24px; transition: all 0.3s;">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://github.com/mahshar-yahan" target="_blank" rel="noopener" style="color: #fff; font-size: 24px; transition: all 0.3s;">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=nIlUC-UAAAAJ&hl=en" target="_blank" rel="noopener" style="color: #4285f4; font-size: 24px; transition: all 0.3s;">
+          <i class="bx bxs-graduation"></i>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<script>
+function copyEmail(email, button) {
+  navigator.clipboard.writeText(email).then(function() {
+    // Change icon to checkmark temporarily
+    const icon = button.querySelector('i');
+    icon.classList.remove('bx-copy');
+    icon.classList.add('bx-check');
+    
+    // Reset after 2 seconds
+    setTimeout(function() {
+      icon.classList.remove('bx-check');
+      icon.classList.add('bx-copy');
+    }, 2000);
+  }).catch(function(err) {
+    console.error('Failed to copy:', err);
+  });
+}
+</script>
+
+
+
+          </div>
+
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <div class="centered-paragraph">
               I am currently working as a <a href="https://uttarauniversity.edu.bd/employee-details/?empid=250017" target="_blank" rel="noopener">Lecturer</a> in the Department of Computer Science and Engineering at 
               <a href="https://uttarauniversity.edu.bd/" target="_blank" rel="noopener">Uttara University</a>.
               I completed my Bachelor of Science (BSc) in Computer Science and Engineering from 
@@ -119,27 +179,12 @@
               <br><br>
 
               Beyond academia, I enjoy traveling and consider myself a movie buff—always eager to discover new destinations or immerse myself in great films. I believe that exploring new places and stories not only enriches my personal life but also inspires creativity and fresh perspectives in my research.
+            </div>
           </div>
-
-
-              <!-- <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 12 October 1996</li>
-                    <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +1 480-401-8112</li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Tempe, AZ</li>
-                    <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> rajaprerak@gmail.com</li>
-                  </ul>
-                </div>
-              </div> -->
         </div>
-      </div>
 
-    </div><!-- End About Me -->
+      </div>
+      <!-- End About Me -->
 
     <!-- ======= Interests ======= -->
 <div class="interests container">

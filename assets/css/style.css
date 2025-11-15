@@ -1209,3 +1209,9 @@ section .container {
   transform: translateX(5px);
   transition: all 0.3s ease;
 }
+
+
+.col-lg-4 a i:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
